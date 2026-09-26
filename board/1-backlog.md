@@ -17,3 +17,4 @@ Anything that comes to mind, one line each.
 - ~~Principle: whenever a step can be mechanical it becomes a script, not a rule in prose or an instruction to an agent — state it in the board docs and hold every card to it~~ → 002
 - ~~Tooling: 001 ran four shell checks pasted into its own task file by hand (deliverables exist, link resolution, template section order, line budget) — make them one script every card's Verification can call~~ → 002
 - spak move re-checks on the branch tip what handoff and log --move checked, so a hand-written move line can't skip them
+- handoff and log --move refuse a second move line out of main's current stage, so a duplicate can't skew the retry suffix or the Handoff count
