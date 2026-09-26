@@ -19,3 +19,4 @@ Anything that comes to mind, one line each.
 - spak move re-checks on the branch tip what handoff and log --move checked, so a hand-written move line can't skip them
 - handoff and log --move refuse a second move line out of main's current stage, so a duplicate can't skew the retry suffix or the Handoff count
 - spak pull refuses when the card's Branch row names a branch that already exists, as when ready was skipped
+- tools/test_spak.py takes about 2.5 minutes; make it faster
