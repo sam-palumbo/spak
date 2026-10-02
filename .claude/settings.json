@@ -1,0 +1,25 @@
+{
+  "permissions": {
+    "ask": [
+      "Bash(git push:*)"
+    ],
+    "allow": [
+      "Bash(git add:*)",
+      "Bash(git commit -m \"checkpoint:*)",
+      "Bash(git push origin backlog)"
+    ]
+  },
+  "hooks": {
+    "PreToolUse": [
+      {
+        "matcher": "Bash",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "python3 \"$CLAUDE_PROJECT_DIR/.claude/hooks/git_guard.py\""
+          }
+        ]
+      }
+    ]
+  }
+}
